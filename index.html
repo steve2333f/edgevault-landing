@@ -3,108 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://js.paystack.co/v1/inline.js"></script>
 <title>Edge Vault: The Trading Journal That Keeps Receipts</title>
-<meta name="description" content="Edge Vault is a trading journal that auto-syncs with MT4 and MT5, enforces your daily risk limits, and turns your trade history into honest, actionable analytics. Try it for $7, 7 days.">
-
-<!-- Schema.org structured data: SoftwareApplication -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "Edge Vault",
-  "applicationCategory": "FinanceApplication",
-  "applicationSubCategory": "Trading Journal",
-  "operatingSystem": "Web",
-  "description": "Edge Vault is a trading journal that auto-syncs with MT4 and MT5, enforces daily risk limits, and turns trade history into analytics traders can act on. It never places trades or touches funds.",
-  "offers": [
-    {
-      "@type": "Offer",
-      "name": "Basic Plan",
-      "price": "23",
-      "priceCurrency": "USD",
-      "billingIncrement": "P1M",
-      "priceValidUntil": "2027-12-31",
-      "url": "https://edgevault-e14.pages.dev/#pricing"
-    },
-    {
-      "@type": "Offer",
-      "name": "Pro Plan",
-      "price": "39",
-      "priceCurrency": "USD",
-      "billingIncrement": "P1M",
-      "priceValidUntil": "2027-12-31",
-      "url": "https://edgevault-e14.pages.dev/#pricing"
-    },
-    {
-      "@type": "Offer",
-      "name": "7-Day Trial",
-      "price": "7",
-      "priceCurrency": "USD",
-      "description": "Try any plan for 7 days for $7",
-      "url": "https://edgevault-e14.pages.dev/#pricing"
-    }
-  ]
-}
-</script>
-
-<!-- Schema.org structured data: FAQPage -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What platforms does Edge Vault sync with?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Edge Vault auto-syncs with any MT4 or MT5 account via a lightweight expert advisor, plus HTML file import from TradingView and cTrader, and manual entry for any other market or platform, including crypto, stocks, futures, and options. Your data syncs in real time across devices."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does Edge Vault place trades for me?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. Edge Vault is a trading journal, not an auto-trader. It tracks, analyzes, and helps you review your trades. It never executes or places orders on your behalf."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What happens when I hit a Daily Limit?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Once you cross your Daily Limit, Edge Vault flags the session with an instant notification and locks new trade entries, giving you a hard stop to protect your account from revenge trading or overtrading."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is my trading data secure?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Account connections run through secure, authenticated API sessions, and your journal data is stored with account-level access rules in a secure cloud database, so no one else can see your trades."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I import old TradingView or cTrader history?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Export your trade history as an HTML file from TradingView or cTrader and import it directly. Edge Vault parses and deduplicates it automatically. You can also manually log past trades and attach chart screenshots."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do I need to install anything?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. Edge Vault runs entirely in your browser as a web app, so there's nothing to download or install."
-      }
-    }
-  ]
-}
-</script>
-
 <style>
   :root{
     --gold:#d4a94a;
@@ -341,7 +241,7 @@
     .img-crossfade{min-height:560px;}
   }
 
-  /* EA Robot / MT5 Expert Advisor graphic - wider 16:9 frame, larger footprint */
+  /* EA Robot / MT5 Expert Advisor graphic — wider 16:9 frame, larger footprint */
   .feature-row.ea-robot-row{padding-top:100px;padding-bottom:100px;}
   .feature-row.ea-robot-row .img-col{flex:2.3;min-width:380px;}
   .feature-row.ea-robot-row .img-crossfade{
@@ -353,7 +253,7 @@
     .feature-row.ea-robot-row .img-crossfade{aspect-ratio:16/9;}
   }
 
-  /* Daily Limits graphic - correct to 16:9 */
+  /* Daily Limits graphic — correct to 16:9 */
   .feature-row.daily-limits-row .img-crossfade{
     min-height:0;
     aspect-ratio:16/9;
@@ -362,7 +262,7 @@
     .feature-row.daily-limits-row .img-crossfade{aspect-ratio:16/9;}
   }
 
-  /* Session Analytics graphic - single screenshot, 16:9 */
+  /* Session Analytics graphic — single screenshot, 16:9 */
   .feature-row.session-analytics-row .img-crossfade{
     min-height:0;
     aspect-ratio:16/9;
@@ -371,7 +271,7 @@
     .feature-row.session-analytics-row .img-crossfade{aspect-ratio:16/9;}
   }
 
-  /* Reset graphic - single screenshot, 16:9 */
+  /* Reset graphic — single screenshot, 16:9 */
   .feature-row.reset-row .img-crossfade{
     min-height:0;
     aspect-ratio:16/9;
@@ -380,7 +280,7 @@
     .feature-row.reset-row .img-crossfade{aspect-ratio:16/9;}
   }
 
-  /* Pre-Market Routine graphic - crossfade pair, 16:9 */
+  /* Pre-Market Routine graphic — crossfade pair, 16:9 */
   .feature-row.pre-market-row .img-crossfade{
     min-height:0;
     aspect-ratio:16/9;
@@ -389,7 +289,7 @@
     .feature-row.pre-market-row .img-crossfade{aspect-ratio:16/9;}
   }
 
-  /* Strategies graphic - crossfade pair, 16:9 */
+  /* Strategies graphic — crossfade pair, 16:9 */
   .feature-row.strategies-row .img-crossfade{
     min-height:0;
     aspect-ratio:16/9;
@@ -398,7 +298,7 @@
     .feature-row.strategies-row .img-crossfade{aspect-ratio:16/9;}
   }
 
-  /* Execution Quality graphic - single screenshot, 16:9 */
+  /* Execution Quality graphic — single screenshot, 16:9 */
   .feature-row.execution-quality-row .img-crossfade{
     min-height:0;
     aspect-ratio:16/9;
@@ -407,7 +307,7 @@
     .feature-row.execution-quality-row .img-crossfade{aspect-ratio:16/9;}
   }
 
-  /* Screenshots & TradingView Snapshots graphic - crossfade pair, 16:9 */
+  /* Screenshots & TradingView Snapshots graphic — crossfade pair, 16:9 */
   .feature-row.screenshots-row .img-crossfade{
     min-height:0;
     aspect-ratio:16/9;
@@ -416,7 +316,7 @@
     .feature-row.screenshots-row .img-crossfade{aspect-ratio:16/9;}
   }
 
-  /* Trading Notes graphic - single screenshot, 16:9 */
+  /* Trading Notes graphic — single screenshot, 16:9 */
   .feature-row.trading-notes-row .img-crossfade{
     min-height:0;
     aspect-ratio:16/9;
@@ -425,7 +325,7 @@
     .feature-row.trading-notes-row .img-crossfade{aspect-ratio:16/9;}
   }
 
-  /* Edge Score graphic - single screenshot, 16:9 */
+  /* Edge Score graphic — single screenshot, 16:9 */
   .feature-row.edge-score-row .img-crossfade{
     min-height:0;
     aspect-ratio:16/9;
@@ -435,7 +335,7 @@
     .feature-row.edge-score-row .img-crossfade{aspect-ratio:16/9;}
   }
 
-  /* Session Win Probability graphic - single screenshot, 16:9 */
+  /* Session Win Probability graphic — single screenshot, 16:9 */
   .feature-row.session-win-prob-row .img-crossfade{
     min-height:0;
     aspect-ratio:16/9;
@@ -445,7 +345,7 @@
     .feature-row.session-win-prob-row .img-crossfade{aspect-ratio:16/9;}
   }
 
-  /* Win/Losing Streaks graphic - single screenshot, 16:9 */
+  /* Win/Losing Streaks graphic — single screenshot, 16:9 */
   .feature-row.streaks-row .img-crossfade{
     min-height:0;
     aspect-ratio:16/9;
@@ -454,7 +354,7 @@
     .feature-row.streaks-row .img-crossfade{aspect-ratio:16/9;}
   }
 
-  /* Holding Time graphic - single screenshot, 16:9 */
+  /* Holding Time graphic — single screenshot, 16:9 */
   .feature-row.holding-time-row .img-crossfade{
     min-height:0;
     aspect-ratio:16/9;
@@ -464,7 +364,7 @@
     .feature-row.holding-time-row .img-crossfade{aspect-ratio:16/9;}
   }
 
-  /* Trade Performance by Day graphic - single screenshot, 16:9 */
+  /* Trade Performance by Day graphic — single screenshot, 16:9 */
   .feature-row.day-performance-row .img-crossfade{
     min-height:0;
     aspect-ratio:16/9;
@@ -474,7 +374,7 @@
     .feature-row.day-performance-row .img-crossfade{aspect-ratio:16/9;}
   }
 
-  /* Ghost Losses graphic - crossfade pair, 16:9 */
+  /* Ghost Losses graphic — crossfade pair, 16:9 */
   .feature-row.ghost-losses-row .img-crossfade{
     min-height:0;
     aspect-ratio:16/9;
@@ -484,7 +384,7 @@
     .feature-row.ghost-losses-row .img-crossfade{aspect-ratio:16/9;}
   }
 
-  /* Prop Firm Challenge graphic - single screenshot, 16:9 */
+  /* Prop Firm Challenge graphic — single screenshot, 16:9 */
   .feature-row.propfirm-row .img-crossfade{
     min-height:0;
     aspect-ratio:16/9;
@@ -493,107 +393,13 @@
     .feature-row.propfirm-row .img-crossfade{aspect-ratio:16/9;}
   }
 
-  /* Bar Replay & Backtesting graphic - single screenshot, 16:9 */
+  /* Bar Replay & Backtesting graphic — single screenshot, 16:9 */
   .feature-row.bar-replay-row .img-crossfade{
     min-height:0;
     aspect-ratio:16/9;
   }
   @media(max-width:800px){
     .feature-row.bar-replay-row .img-crossfade{aspect-ratio:16/9;}
-  }
-
-  /* Speak Your Trade graphic - custom mockup, 16:9 */
-  .feature-row.voice-notes-row .img-crossfade{
-    min-height:0;
-    aspect-ratio:16/9;
-  }
-  @media(max-width:800px){
-    .feature-row.voice-notes-row .img-crossfade{aspect-ratio:16/9;}
-  }
-  .voice-note-mock{
-    position:absolute;inset:0;
-    display:flex;flex-direction:column;align-items:center;justify-content:center;
-    gap:22px;
-    padding:24px;
-  }
-  .voice-note-mock .vn-card{
-    width:86%;max-width:360px;
-    background:#1c1c1c;
-    border:1px solid #2c2c2c;
-    border-radius:16px;
-    padding:16px 18px;
-    box-shadow:0 20px 40px -20px rgba(0,0,0,.6);
-  }
-  .voice-note-mock .vn-status{
-    display:flex;align-items:center;gap:8px;
-    color:#e8a33d;
-    font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;
-    margin-bottom:10px;
-  }
-  .voice-note-mock .vn-dot{
-    width:8px;height:8px;border-radius:50%;
-    background:#e8534a;
-    animation:vnBlink 1.1s ease-in-out infinite;
-  }
-  .voice-note-mock .vn-lines{display:flex;flex-direction:column;gap:8px;}
-  .voice-note-mock .vn-line{
-    height:9px;border-radius:5px;
-    background:linear-gradient(90deg,#3a3a3a,#2a2a2a);
-    animation:vnType 2.4s ease-in-out infinite;
-  }
-  .voice-note-mock .vn-line:nth-child(1){width:92%;}
-  .voice-note-mock .vn-line:nth-child(2){width:78%;animation-delay:.2s;}
-  .voice-note-mock .vn-line:nth-child(3){width:85%;animation-delay:.4s;}
-  .voice-note-mock .vn-line:nth-child(4){width:55%;animation-delay:.6s;}
-  .voice-note-mock .vn-mic-wrap{
-    position:relative;
-    width:74px;height:74px;
-    display:flex;align-items:center;justify-content:center;
-  }
-  .voice-note-mock .vn-ring{
-    position:absolute;inset:0;
-    border-radius:50%;
-    border:2px solid var(--gold);
-    opacity:0;
-    animation:vnPulse 1.8s ease-out infinite;
-  }
-  .voice-note-mock .vn-ring:nth-child(2){animation-delay:.6s;}
-  .voice-note-mock .vn-mic-btn{
-    position:relative;z-index:1;
-    width:56px;height:56px;border-radius:50%;
-    background:var(--gold);
-    display:flex;align-items:center;justify-content:center;
-    color:#1a1300;
-    box-shadow:0 8px 20px -6px rgba(212,169,74,.6);
-  }
-  .voice-note-mock .vn-mic-btn svg{width:26px;height:26px;}
-  .voice-note-mock .vn-waveform{
-    display:flex;align-items:center;gap:3px;height:22px;
-  }
-  .voice-note-mock .vn-bar{
-    width:3px;border-radius:2px;
-    background:var(--gold);
-    animation:vnWave 1s ease-in-out infinite;
-  }
-  .voice-note-mock .vn-bar:nth-child(1){height:8px;animation-delay:0s;}
-  .voice-note-mock .vn-bar:nth-child(2){height:18px;animation-delay:.1s;}
-  .voice-note-mock .vn-bar:nth-child(3){height:12px;animation-delay:.2s;}
-  .voice-note-mock .vn-bar:nth-child(4){height:20px;animation-delay:.3s;}
-  .voice-note-mock .vn-bar:nth-child(5){height:10px;animation-delay:.4s;}
-  .voice-note-mock .vn-bar:nth-child(6){height:16px;animation-delay:.5s;}
-  .voice-note-mock .vn-bar:nth-child(7){height:9px;animation-delay:.6s;}
-  @keyframes vnBlink{0%,100%{opacity:1;}50%{opacity:.25;}}
-  @keyframes vnPulse{
-    0%{transform:scale(.8);opacity:.6;}
-    100%{transform:scale(1.6);opacity:0;}
-  }
-  @keyframes vnWave{
-    0%,100%{transform:scaleY(.5);}
-    50%{transform:scaleY(1);}
-  }
-  @keyframes vnType{
-    0%,100%{opacity:.5;}
-    50%{opacity:1;}
   }
 
   /* TOOL BADGES */
@@ -618,7 +424,7 @@
   .bill-knob{position:absolute;top:3px;left:3px;width:18px;height:18px;background:#fff;border-radius:50%;transition:left .2s ease;pointer-events:none;box-shadow:0 1px 2px rgba(0,0,0,.2);}
   .bill-switch input:checked ~ .bill-knob{left:23px;}
 
-  /* ONBOARDING QUIZ MODAL - styled to feel like an in-app setup flow, not a popup */
+  /* ONBOARDING QUIZ MODAL — styled to feel like an in-app setup flow, not a popup */
   .quiz-overlay{
     display:none;position:fixed;inset:0;background:rgba(10,8,2,.72);
     backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);
@@ -772,7 +578,7 @@
     }
   }
   .fullbleed-shot{display:block;width:100vw;max-width:100vw;height:auto;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);box-shadow:0 20px 40px -18px rgba(20,16,8,.25);}
-  /* PER-IMAGE SCROLL REVEAL - independent of the parent row's fade, applies at all sizes */
+  /* PER-IMAGE SCROLL REVEAL — independent of the parent row's fade, applies at all sizes */
   .fullbleed-shot{
     opacity:0;
     transform:translateY(48px) scale(.92);
@@ -1113,7 +919,7 @@
 <body>
 
 <div style="background:var(--ink);color:#fff;text-align:center;padding:10px 6%;font-size:14px;font-weight:600;">
-  🔥 Limited time: Try any plan for <span style="color:var(--gold);">$7</span> - first 7 days
+  🔥 Limited time: Try any plan for <span style="color:var(--gold);">$7</span> for your first 7 days
 </div>
 
 <header>
@@ -1166,7 +972,7 @@
 
 <!-- TOOLS -->
 <section>
-  <p class="tools-lead">Built to work with the tools you already trade on - with direct connections to over 1,000 brokers</p>
+  <p class="tools-lead">Built to work with the tools you already trade on, with direct connections to over 1,000 brokers</p>
   <div class="badges">
     <div class="badge">MetaTrader 4</div>
     <div class="badge">MetaTrader 5</div>
@@ -1491,46 +1297,6 @@
       <li>Free-form notes attached to every trade</li>
       <li>Searchable later when patterns start to repeat</li>
       <li>Turns a gut feeling into something you can review</li>
-    </ul>
-  </div>
-</div>
-
-<!-- SPEAK YOUR TRADE / VOICE NOTES -->
-<div class="feature-row reverse voice-notes-row" data-tab="psychology">
-  <div class="img-col">
-    <div class="img-crossfade dark">
-      <div class="voice-note-mock">
-        <div class="vn-mic-wrap">
-          <span class="vn-ring"></span>
-          <span class="vn-ring"></span>
-          <span class="vn-mic-btn">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
-          </span>
-        </div>
-        <div class="vn-waveform">
-          <span class="vn-bar"></span><span class="vn-bar"></span><span class="vn-bar"></span>
-          <span class="vn-bar"></span><span class="vn-bar"></span><span class="vn-bar"></span><span class="vn-bar"></span>
-        </div>
-        <div class="vn-card">
-          <div class="vn-status"><span class="vn-dot"></span>Recording note…</div>
-          <div class="vn-lines">
-            <div class="vn-line"></div>
-            <div class="vn-line"></div>
-            <div class="vn-line"></div>
-            <div class="vn-line"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="text-col">
-    <div class="eyebrow">Speak Your Trade</div>
-    <h2 style="font-size:30px;max-width:640px;">Tap the mic. Talk it out. The note writes itself.</h2>
-    <p class="body-text" style="margin-top:16px;">Right after a trade your head is full of reasons, doubts, and half-formed plans, and typing it all out is the last thing you want to do. Tap where you want the note, hit the mic, and just talk. Edge Vault records and transcribes it straight into that trade's notes.</p>
-    <ul class="feature-list">
-      <li>Tap any trade, tap the mic, and start talking</li>
-      <li>Speech is transcribed automatically into text notes</li>
-      <li>Captures the reasoning while it's still fresh, no typing required</li>
     </ul>
   </div>
 </div>
@@ -2021,7 +1787,7 @@
         <li>Bar Replay backtesting</li>
         <li>Calm / Breathe reset library</li>
       </ul>
-      <button class="btn-outline" onclick="openQuiz('basic')" style="width:100%;margin-top:8px;text-align:center;">Try Basic - $7 for 7 Days</button>
+      <button class="btn-outline" onclick="openQuiz('basic')" style="width:100%;margin-top:8px;text-align:center;">Try Basic: $7 for 7 Days</button>
     </div>
 
     <div style="background:#faf3dd;border:1px solid var(--gold);border-radius:16px;padding:34px;position:relative;">
@@ -2038,7 +1804,7 @@
         <li>Weekly Report Card (A–F grading)</li>
         <li>Priority support</li>
       </ul>
-      <button class="btn-gold" onclick="openQuiz('pro')" style="width:100%;margin-top:8px;text-align:center;">Try Pro - $7 for 7 Days</button>
+      <button class="btn-gold" onclick="openQuiz('pro')" style="width:100%;margin-top:8px;text-align:center;">Try Pro: $7 for 7 Days</button>
     </div>
 
   </div>
@@ -2513,7 +2279,7 @@ document.addEventListener('DOMContentLoaded', function(){
     <button class="quiz-close" aria-label="Close" onclick="closeQuiz()">&times;</button>
     <div class="quiz-header">
       <div class="quiz-logo-mark">EV</div>
-      <div class="quiz-header-text">Edge Vault - Account Setup</div>
+      <div class="quiz-header-text">Edge Vault Account Setup</div>
     </div>
     <div class="quiz-body">
     <div class="quiz-progress"><div class="quiz-progress-bar" id="quizProgressBar" style="width:16%;"></div></div>
@@ -2573,7 +2339,7 @@ document.addEventListener('DOMContentLoaded', function(){
         <div style="font-size:20px;font-weight:800;color:#fff;" id="quizPlanName">Pro</div>
         <div style="color:#c9b98a;font-size:14px;margin-top:4px;" id="quizPlanPrice">$39/month · Try 7 days for $7</div>
       </div>
-      <button class="btn-gold" style="width:100%;" onclick="quizFinish()" id="quizFinishBtn">Activate My Vault - $7 Trial</button>
+      <button class="btn-gold" style="width:100%;" onclick="quizFinish()" id="quizFinishBtn">Activate My Vault: $7 Trial</button>
       <button class="btn-outline" style="width:100%;margin-top:10px;" onclick="quizSwitchPlan()" id="quizSwitchBtn">See the other plan instead</button>
     </div>
 
@@ -2596,7 +2362,7 @@ document.addEventListener('DOMContentLoaded', function(){
       supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
     } catch (e) {
       supabaseReady = false;
-      console.error('Supabase client failed to initialize - check your URL and anon key:', e);
+      console.error('Supabase client failed to initialize — check your URL and anon key:', e);
     }
   } else {
     console.warn('Edge Vault: Supabase credentials are still placeholders. Account signup in the quiz will not work until SUPABASE_URL and SUPABASE_ANON_KEY are set.');
@@ -2691,7 +2457,7 @@ document.addEventListener('DOMContentLoaded', function(){
       return;
     }
     if(!supabaseReady || !supabaseClient){
-      showError('Signup isn\'t connected yet - add your Supabase project URL and anon key to enable account creation.');
+      showError('Signup isn\'t connected yet — add your Supabase project URL and anon key to enable account creation.');
       return;
     }
 
@@ -2709,7 +2475,7 @@ document.addEventListener('DOMContentLoaded', function(){
       quizState.userId = res.data.user ? res.data.user.id : null;
       quizState.email = email;
       if(quizState.forcedPlan){
-        renderRecommendation(quizState.forcedPlan, "You picked this plan - here's a quick summary.");
+        renderRecommendation(quizState.forcedPlan, "You picked this plan. Here's a quick summary.");
         goToStep(5);
       } else {
         goToStep(1);
@@ -2717,7 +2483,7 @@ document.addEventListener('DOMContentLoaded', function(){
     }).catch(function(err){
       btn.disabled = false;
       btn.textContent = 'Continue';
-      showError('Network error - please try again.');
+      showError('Network error — please try again.');
     });
   }
 
@@ -2740,9 +2506,9 @@ document.addEventListener('DOMContentLoaded', function(){
 
   function reasonForPlan(plan){
     if(plan === 'pro'){
-      return "Multiple accounts, prop firm challenges, or breaking your own rules - that's exactly what AI Trade Insights and Ghost Loss Analysis are built for.";
+      return "Multiple accounts, prop firm challenges, or breaking your own rules. That's exactly what AI Trade Insights and Ghost Loss Analysis are built for.";
     }
-    return "One account and a clean, honest record - Basic covers everything you need to start.";
+    return "One account and a clean, honest record. Basic covers everything you need to start.";
   }
 
   function renderRecommendation(plan, reasonText){
@@ -2760,10 +2526,10 @@ document.addEventListener('DOMContentLoaded', function(){
     renderRecommendation(other, "Here's the other plan, if you'd rather start there.");
   };
 
-  function saveLead(plan){
-    // Best-effort lead capture for follow-up - doesn't block navigation if it fails.
+  function saveLead(plan, paymentReference, paymentStatus){
+    // Best-effort lead capture for follow-up — doesn't block navigation if it fails.
     if(!supabaseReady || !supabaseClient){
-      console.warn('Skipping lead save - Supabase not configured yet.');
+      console.warn('Skipping lead save — Supabase not configured yet.');
       return Promise.resolve();
     }
     return supabaseClient.from('quiz_leads').insert({
@@ -2774,7 +2540,9 @@ document.addEventListener('DOMContentLoaded', function(){
       prop_firm: quizState.propFirm,
       struggle: quizState.struggle,
       recommended_plan: recommendPlan ? (quizState.currentPlan || null) : null,
-      chosen_plan: plan
+      chosen_plan: plan,
+      payment_reference: paymentReference || null,
+      payment_status: paymentStatus || 'unpaid'
     }).then(function(res){
       if(res.error) console.error('Lead save failed:', res.error.message);
     }).catch(function(err){
@@ -2785,13 +2553,43 @@ document.addEventListener('DOMContentLoaded', function(){
   window.quizFinish = function(){
     var plan = quizState.currentPlan || 'basic';
     var finishBtn = document.getElementById('quizFinishBtn');
-    finishBtn.disabled = true;
-    finishBtn.textContent = 'Setting things up…';
+    var emailInput = document.getElementById('quizEmail') || document.getElementById('quiz-email');
+    var email = (emailInput && emailInput.value) ? emailInput.value.trim() : (quizState.email || '');
 
-    saveLead(plan).then(function(){
-      var url = 'https://edgevault-e14.pages.dev/?plan=' + plan + '&trial=1';
-      window.location.href = url;
+    if(!email){
+      alert('Please enter your email before continuing to payment.');
+      return;
+    }
+
+    finishBtn.disabled = true;
+    finishBtn.textContent = 'Opening secure payment…';
+
+    var handler = PaystackPop.setup({
+      key: 'pk_test_01c015f33f299c5d4cbe14a8e69972c0b0f4f5fa',
+      email: email,
+      amount: 700 * 100, // $7 trial charge, in the smallest currency unit
+      currency: 'USD',
+      ref: 'edgevault_' + plan + '_' + Date.now(),
+      metadata: {
+        plan: plan,
+        platform: quizState.platform,
+        accounts: quizState.accounts,
+        prop_firm: quizState.propFirm,
+        struggle: quizState.struggle
+      },
+      callback: function(response){
+        finishBtn.textContent = 'Payment received, setting things up…';
+        saveLead(plan, response.reference, 'paid').then(function(){
+          var url = 'https://edgevault-e14.pages.dev/?plan=' + plan + '&trial=1&ref=' + response.reference;
+          window.location.href = url;
+        });
+      },
+      onClose: function(){
+        finishBtn.disabled = false;
+        finishBtn.textContent = 'Activate My Vault: $7 Trial';
+      }
     });
+    handler.openIframe();
   };
 })();
 </script>
